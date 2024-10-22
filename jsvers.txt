@@ -1,0 +1,29 @@
+class Vehicle {
+    constructor(model, year, brand, purchaseDate, purchasePrice, ownerName, ownerModelYear) {
+        this.model = model;
+        this.year = year;
+        this.brand = brand;
+        this.purchaseDate = purchaseDate;
+        this.purchasePrice = purchasePrice;
+        this.ownerName = ownerName;
+        this.ownerModelYear = ownerModelYear;
+    }
+}
+
+class VehicleManager {
+    constructor() {
+        this.vehicles = [];
+    }
+
+    addVehicle(vehicle) {
+        this.vehicles.push(vehicle);
+    }
+
+    listVehicles() {
+        return this.vehicles.map(vehicle => `
+            <div>
+                <strong>Şasi Numarası:</strong> ${vehicle.model} <br>
+                <strong>Sahibi:</strong> ${vehicle.ownerName} <br>
+                <strong>Edinme Tarihi:</strong> ${vehicle.purchaseDate} <br>
+                <strong>Model Yılı:</strong> ${vehicle.ownerModelYear} <br>
+            </div>

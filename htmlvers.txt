@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+     <title>Araç Yönetim Sistemi</title>
+     
+  </head>
+
+  <body>
+    <h1>Araç Yönetim Sistemi</h1>
+    <h2>Araç Ekle</h2>
+    <form id="vehicleForm">
+      <label for="model">Model:</label>
+      <input type="text" id="model" required>
+      <label for="year">Yıl:</label>
+      <input type="number" id="year" required>
+      <label for="brand">Marka:</label>
+      <input type="text" id="brand" required>
+      <labe for="purchaseDate">Satın Alınan Tarih:</label>
+      <input type="date" id="purchaseDate" required>
+      <label for="purchasePrice">Alınan Fiyat:</label>
+      <input type="number" id="purchasePrice" required>
+      <label for="ownerName">Sahibi:</label>
+      <input type="text" id="ownerName" required>
+      <label for="ownerModelYear"> Model Yılı:</label>
+      <input type="text" id="ownerModelYear" required>
+      <button type="submit">Araç Ekle</button>
+      </form>
+      <button id="listVehicles">Kişi Arabalarımı Listele</button>
+      <div class="vehicle-list" id="vehicleList"></div>
+  </body>
+</html>
